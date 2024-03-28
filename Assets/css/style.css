@@ -1,6 +1,6 @@
 /* Custom CSS */
 body {
-  font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .jumbotron {
   background-image: url("https://via.placeholder.com/1500x500");
