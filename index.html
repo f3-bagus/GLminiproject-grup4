@@ -6,14 +6,14 @@
     <title>Bouquet Memories</title>
     <link
       rel="shortcut icon"
-      href="/Assets/img/favicon.ico"
+      href="Assets/img/favicon.ico"
       type="image/x-icon"
     />
     <link
-      href="/Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+      href="Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,18 +22,12 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Bouquet Memories</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="Assets/img/icon.png">
+          <img src="Assets/img/icon.png" alt="Bouquet Memories Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,60 +51,117 @@
         </div>
       </div>
     </nav>
-
+    
     <div id="home" class="jumbotron">
       <h1>Selamat Datang di Bouquet Memories</h1>
     </div>
 
     <div id="produk" class="section">
       <div class="container">
-        <h2 class="section-heading">Produk Kami</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Mawar Merah</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="true">NEW</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="top-tab" data-bs-toggle="tab" data-bs-target="#top" type="button" role="tab" aria-controls="top" aria-selected="false">TOP</button>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+            <!-- Konten tab New -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Bunga Uang</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>                
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Cokelat</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Snack</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Anggrek Putih</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          <div class="tab-pane fade" id="top" role="tabpanel" aria-labelledby="top-tab">
+            <!-- Konten tab Top -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Nama Bunga</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Lily Pink</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
+              <div class="col-md-6">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Nama Bunga</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <div id="best-seller" class="best">
+      <div class="container">
+        <h1 class="section-heading text-center mb-4">Best Seller</h1>
+        <h4 class="text-center mb-4">Produk Pilihan Pelanggan Kami</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="boxbest d-flex">
+              <div class="image-container">
+                <img src="Assets/img/icon.png" alt="Nama Bunga" class="img-fluid">
+              </div>
+              <div class="info-container d-flex flex-column justify-content-center">
+                <div class="bunga text-center">Nama Bunga</div>
+                <div class="harga text-center">Harga: Rp xxx</div>
+                <div class="garisbest mx-auto"></div>
+                <button class="btn btn-belibest mx-auto mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="boxbest d-flex">
+              <div class="image-container">
+                <img src="Assets/img/icon.png" alt="Nama Bunga" class="img-fluid">
+              </div>
+              <div class="info-container d-flex flex-column justify-content-center">
+                <div class="bunga text-center">Nama Bunga</div>
+                <div class="harga text-center">Harga: Rp xxx</div>
+                <div class="garisbest mx-auto"></div>
+                <button class="btn btn-belibest mx-auto mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
 
     <div id="tentang" class="section">
       <div class="container">
@@ -146,6 +197,6 @@
       </div>
     </footer>
 
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
