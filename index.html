@@ -1,151 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bouquet Memories</title>
-    <link
-      rel="shortcut icon"
-      href="/Assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="/Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Bouquet Memories</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#produk">Produk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tentang">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimoni">Testimoni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak Kami</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buket Bunga</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #f7f7f7;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .image img {
+      width: 100%;
+    }
+
+    .text {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Tentang Kami</h1>
+    </div>
+    <div class="content">
+      <div class="image">
+        <img src="bouquet-money.jpg" alt="Buket Bunga">
+      </div>
+      <div class="text">
+        <p>Bouquet Memories adalah tempat di mana setiap momen berharga Anda diabadikan dalam keindahan buket bunga yang dirancang secara khusus. Kami berkomitmen untuk menyampaikan keindahan dan kenangan yang tak terlupakan melalui kreasi bunga yang unik dan berkualitas tinggi. Dengan sentuhan artistik dan cinta akan detail, kami menciptakan buket yang mewakili cerita Anda. Selamat datang di Bouquet Memories, di mana setiap bunga memiliki cerita yang indah untuk diceritakan.</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bouquet Memories</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimoni">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home" class="jumbotron">
+    <h1>Selamat Datang di Bouquet Memories</h1>
+  </div>
+
+  <div id="produk" class="section">
+    <div class="container">
+      <h2 class="section-heading">Produk Kami</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top product-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Mawar Merah</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top product-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Anggrek Putih</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top product-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Lily Pink</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <div id="home" class="jumbotron">
-      <h1>Selamat Datang di Bouquet Memories</h1>
     </div>
+  </div>
 
-    <div id="produk" class="section">
-      <div class="container">
-        <h2 class="section-heading">Produk Kami</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Mawar Merah</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Anggrek Putih</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Lily Pink</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div id="tentang" class="section">
+    <div class="container">
+      <h2 class="section-heading">Tentang Kami</h2>
+      <p>Bouquet Memories adalah tempat di mana setiap momen berharga  Anda diabadikan dalam keindahan buket bunga yang dirancang
+          secara khusus. Kami berkomitmen untuk menyampaikan keindahan dan kenangan yang tak terlupakan melalui kreasi bunga yang unik
+          dan berkualitas tinggi. Dengan sentuhan artistik dan cinta akan detail, kami menciptakan buket yang mewakili cerita Anda. Selamat datang
+          di Bouquet Memories, di mana setiap bunga memiliki cerita yang indah untuk diceritakan.</p>
+        <section id="image-section">
+            <img src="[Image of Bouquet of money wrapped with flowers]" alt="Bouquet of flowers">
+        </section>
     </div>
+  </div>
 
-    <div id="tentang" class="section">
-      <div class="container">
-        <h2 class="section-heading">Tentang Kami</h2>
-        <!-- Testimoni content goes here -->
-      </div>
+  <div id="testimoni" class="section">
+    <div class="container">
+      <h2 class="section-heading">Testimoni Pelanggan</h2>
+      <!-- Testimoni content goes here -->
     </div>
+  </div>
 
-    <div id="testimoni" class="section">
-      <div class="container">
-        <h2 class="section-heading">Testimoni Pelanggan</h2>
-        <!-- Testimoni content goes here -->
-      </div>
+  <div id="faq" class="section">
+    <div class="container">
+      <h2 class="section-heading">FaQ</h2>
+      <!-- Faqs content goes here -->
     </div>
+  </div>
 
-    <div id="faq" class="section">
-      <div class="container">
-        <h2 class="section-heading">FaQ</h2>
-        <!-- Faqs content goes here -->
-      </div>
+  <div id="kontak" class="section">
+    <div class="container">
+      <h2 class="section-heading">Hubungi Kami</h2>
+      <!-- Kontak form or information goes here -->
     </div>
+  </div>
 
-    <div id="kontak" class="section">
-      <div class="container">
-        <h2 class="section-heading">Hubungi Kami</h2>
-        <!-- Kontak form or information goes here -->
-      </div>
-    </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Bouquet Memories.
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Bouquet Memories. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
