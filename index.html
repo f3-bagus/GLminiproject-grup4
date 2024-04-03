@@ -1,151 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bouquet Memories</title>
-    <link
-      rel="shortcut icon"
-      href="/Assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="/Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Bouquet Memories</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#produk">Produk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tentang">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimoni">Testimoni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak Kami</a>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bouquet Memories</title>
+  <link rel="shortcut icon" href="/Assets/img/favicon.ico" type="image/x-icon" />
+  <link href="/Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/Assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css    ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bouquet Memories</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimoni">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak Kami</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <div id="home" class="jumbotron">
-      <h1>Selamat Datang di Bouquet Memories</h1>
     </div>
-
-    <div id="produk" class="section">
-      <div class="container">
-        <h2 class="section-heading">Produk Kami</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Mawar Merah</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
+  </nav>
+  <!--- HERO --->
+  <section id="hero" class="hero">
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-txt">
+            <h1>Bouquet Memories</h1>
+            <p>Jadikan Kenangan dalam Setiap Rangkaian</p>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Anggrek Putih</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
+          <img src="assets/img/heroflower1.svg" alt="">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-txt">
+            <h1>Bouquet Memories</h1>
+            <p>Jadikan Kenangan dalam Setiap Rangkaian</p>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300"
-                class="card-img-top product-img"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bouquet Lily Pink</h5>
-                <p class="card-text">Deskripsi produk disini.</p>
-                <a href="#" class="btn btn-primary">Beli Sekarang</a>
-              </div>
-            </div>
-          </div>
+          <img src="assets/img/heroflower2.svg" alt="flower bouquet">
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="tentang" class="section">
-      <div class="container">
-        <h2 class="section-heading">Tentang Kami</h2>
-        <!-- Testimoni content goes here -->
+  <div id="produk" class="section">
+    <div class="container">
+      <h2 class="section-heading">Produk Kami</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Mawar Merah</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Anggrek Putih</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Bouquet Lily Pink</h5>
+              <p class="card-text">Deskripsi produk disini.</p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div id="testimoni" class="section">
-      <div class="container">
-        <h2 class="section-heading">Testimoni Pelanggan</h2>
-        <!-- Testimoni content goes here -->
-      </div>
+  <div id="tentang" class="section">
+    <div class="container">
+      <h2 class="section-heading">Tentang Kami</h2>
+      <!-- Tentang Kami content goes here -->
     </div>
+  </div>
 
-    <div id="faq" class="section">
-      <div class="container">
-        <h2 class="section-heading">FaQ</h2>
-        <!-- Faqs content goes here -->
+  <div id="testimoni" class="section">
+    <div class="container">
+      <h2 class="section-heading-testi">Testimoni Pelanggan</h2>
+      <p class="section-heading">Temukan bagaimana produk kami membantu pelanggan mencapai tujuan mereka.</p>
+      <div class="swiper slide-container">
+        <div class="slide-content swiper-wrapper">
+          <div class="swiper-slide">
+            
+          <div class="card-wrapper "> <!--  card testi per orang -->
+            <div class="card-testi ">
+              <div class="testi-bio">
+                <img src="assets/img/avatar.svg" alt="Avatar" class="avatar">
+                <div class="name-star">
+                  <h5>Karina</h5>
+                  <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-txt">
+                <p>Buket bunganya rapi dan menawan. Puas sekali!</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+      <!-- <div class="testimoni">
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar.svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Karina</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket bunganya rapi dan menawan. Puas sekali!</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (2).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Kinar</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket bunganya rapi dan menawan. Puas sekali!</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (3).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Sarah</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Pelayanannya ramah dan sangat baikk. Buketnya juga sesuai dengan yang di foto :). Terimakasih banyak Kak!</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni">
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar.svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Rayana</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket bunga sangat bagus dengan harga yang semurah itu. 
+                Aku pasti mau berlanganan disini.</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (2).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Haikal</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket uangnya unik banget! Uang kertasnya dilipat dengan rapi dan dihias dengan bunga-bunga cantik.
+                 Terima kasih banyak atas hadiahnya yang berkesan!</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (3).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Xaviera</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket snacknya kreatif dan lezat. Snacknya beragam dan dikemas dengan menarik. 
+                Ide hadiah yang bagus dan diterima dengan senang</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni">
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar.svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Afi</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Buket uangnya kreatif dan keren. Senang sekali menerimanya!</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (2).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Zide</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Terimakasih banyak atas buketnya! Sangat cantik dan sesuai dengan yang saya inginkan.</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-bio">
+              <img src="assets/img/avatar (4).svg" alt="Avatar" class="avatar">
+              <div class="name-star">
+                <h5>Nayara</h5>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>  
+            </div>          
+            <div class="testi-txt">
+              <p>Sesuai dengan yang di foto dan bunganya masih segar. Pengirimannya juga cepat dan tepat waktu.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> -->
     </div>
+  </div>
 
-    <div id="kontak" class="section">
-      <div class="container">
-        <h2 class="section-heading">Hubungi Kami</h2>
-        <!-- Kontak form or information goes here -->
-      </div>
+  <div id="faq" class="section">
+    <div class="container">
+      <h2 class="section-heading">FaQ</h2>
+      <!-- Faqs content goes here -->
     </div>
+  </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Bouquet Memories. All rights reserved.</p>
-      </div>
-    </footer>
+  <div id="kontak" class="section">
+    <div class="container">
+      <h2 class="section-heading">Hubungi Kami</h2>
+      <!-- Kontak form or information goes here -->
+    </div>
+  </div>
 
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Bouquet Memories. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
