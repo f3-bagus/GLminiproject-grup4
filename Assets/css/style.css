@@ -4,8 +4,31 @@ h4 {
 }
 body {
   font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0;
+}
+
+/*colors*/
+.whitegre {
+  color: rgba(233, 233, 233, 1);
+}
+
+.pink {
+  color: rgba(231, 203, 202, 1);
+}
+
+.lightpurple {
+  color: rgba(200, 142, 167, 1);
+}
+
+.purple {
+  color: rgba(163, 113, 135, 1);
+}
+
+.darkpurple {
+  color: rgba(99, 56, 66, 1);
+}
+
+.black {
+  color: black;
 }
 
 /* Navbar */
@@ -52,6 +75,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+
 /* ------------ Produk --------------- */
 .bunga {
   font-weight: bold;
@@ -81,6 +105,58 @@ body {
 .btn-beli:hover {
   background-color: #99617A; /* Warna latar belakang saat dihover */
   color: #000000; /* Warna teks saat dihover */
+}
+
+/*------------------heroes------------------*/
+.hero {
+  padding: 50px 12%;
+  height: 700px;
+  background-color: rgb(255, 255, 255);
+}
+
+#carouselHero {
+  height: 600px;
+  position: relative;
+  background-color: rgba(231, 203, 202, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  width: 100%;
+  margin: 5%;
+}
+
+.carousel-item>div {
+  max-width: 50%;
+  padding: 0 20px;
+  color: black;
+}
+
+.carousel-item h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.carousel-item>img {
+  max-width: 50%;
+  height: 500px;
+  align-self: center;
+  display: flexbox;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
 }
 
 /* Custom Best Seller */
@@ -191,6 +267,78 @@ body {
 }
 /* ----------------------------------------------------------- */
 
+/*-------------------TESTIMONI-------------------*/
+.section-heading-testi {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#testimoni{
+  background-color: #E7CBCA;
+}
+.slide-container{
+  max-width: 1400px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px; 
+
+}
+.card-testi {
+  width: 420px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(99, 56, 66, 1);
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testi-txt{
+  background-color: rgba(233, 233, 233, 1);
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  text-align: left;
+  align-items: center;
+  margin-top: 10px;
+}
+.testi-bio{
+  display: flex;
+  color: #E9E9E9;
+}
+.checked {
+  color: #FFE500;
+}
+.name-star{
+  align-content: center;
+  margin: 10px;
+}
+.swiper-pagination-bullet{
+  background-color: #E7CBCA;
+  margin-top: 200px;
+  margin-bottom: -50;
+}
+.swiper-navbtn{
+  color:#E7CBCA;
+  transition: color 0.3s ease;
+}
+
+.swiper-navbtn:hover{
+  color: rgba(99, 56, 66, 1);
+}
+/* ------------------------------------------ */
+
 /*---------- Hubungi Kami --------------*/
 .align-content-xl-center {
   text-align: center;
@@ -288,4 +436,3 @@ input[type="email"] {
   padding: 30px 0;
   text-align: center;
 }
-/* ------------------------------------ */
