@@ -140,7 +140,7 @@
           <h2 class="section-heading">Hubungi Kami</h2>
           <p class="ket">Ada pertanyaan? Silahkan tinggalkan pesan anda.</p>
         </div>
-        <div class="row justify-content-center" style="background-color: #EBDFE4; border-radius: 15px;">
+        <div class="form-contact row justify-content-center">
           <div class="col-md-12">
             <div class="wrapper">
               <div class="row no-gutters">
@@ -157,69 +157,80 @@
                     >
                       <div class="row">
                         <div class="col-md-6">
+                          <label class="label" for="namadepan"
+                            >Nama Depan</label
+                          >
+                        </div>
+                        <div class="col-md-6">
+                          <label class="label" for="namabelakang"
+                            >Nama Belakang</label
+                          >
+                        </div>
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label class="label" for="namadepan"
-                              >Nama Depan</label
-                            >
                             <input
                               type="text"
                               class="form-control"
                               name="namadepan"
                               id="namadepan"
-                              placeholder="Nama Depan"
                             />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label class="label" for="namabelakang"
-                              >Nama Belakang</label
-                            >
                             <input
                               type="text"
                               class="form-control"
                               name="namabelakang"
                               id="namabelakang"
-                              placeholder="Nama Belakang"
                             />
                           </div>
                         </div>
                         <div class="col-md-6">
+                          <label class="label" for="email">Email</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="label" for="notelpon"
+                            >Nomor Telpon</label
+                          >
+                        </div>
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label class="label" for="email">Email</label>
                             <input
                               type="email"
                               class="form-control"
                               name="email"
                               id="email"
-                              placeholder="Email"
                             />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label class="label" for="notelpon"
-                              >Nomor Telpon</label
-                            >
                             <input
                               type="text"
                               class="form-control"
                               name="notelpon"
                               id="notelpon"
-                              placeholder="No Telpon"
                             />
                           </div>
                         </div>
                         <div class="col-md-12">
+                          <label class="label" for="message">Pesan</label>
+                        </div>
+                        <div class="col-md-12">
                           <div class="form-group">
-                            <label class="label" for="#">Pesan</label>
                             <textarea
                               name="message"
                               class="form-control"
                               id="message"
                               cols="30"
                               rows="4"
-                              placeholder="Message"
+                              style="
+                                background-color: transparent;
+                                border-radius: 0;
+                                border: 0;
+                                border-bottom: 1px solid #000;
+                              "
                             ></textarea>
                           </div>
                         </div>
@@ -236,61 +247,35 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-5 col-md-5 d-flex align-items-stretch" style="background-color:#633842; color: #E9E9E9; border-radius: 15px;">
+                <div
+                  class="boxinfo col-lg-5 col-md-5 d-flex align-items-stretch"
+                >
                   <div class="info-wrap w-100 p-md-5 p-4">
-                    <h3>Informasi Kontak Kami</h3>
+                    <h4>Informasi Kontak Kami</h4>
                     <p class="mb-4">
                       Mari saling terhubung untuk mendapatkan informasi terbaru
                       lainnya
                     </p>
-                    <div class="dbox w-100 d-flex align-items-start">
-                      <div
-                        class="icon d-flex align-items-center justify-content-center"
-                      >
-                        <span class="fa fa-map-marker"></span>
-                      </div>
-                      <div class="text pl-3">
-                        <p><span>Alamat:</span> Tembalang</p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center">
-                      <div
-                        class="icon d-flex align-items-center justify-content-center"
-                      >
-                        <span class="fa fa-phone"></span>
-                      </div>
-                      <div class="text pl-3">
-                        <p>
-                          <span>No Telpon:</span>
-                          <a href="tel://1234567920">+ 62 12739 127</a>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center">
-                      <div
-                        class="icon d-flex align-items-center justify-content-center"
-                      >
-                        <span class="fa fa-paper-plane"></span>
-                      </div>
-                      <div class="text pl-3">
-                        <p>
-                          <span>Email:</span>
-                          <a href="mailto:info@yoursite.com"
-                            >bouquetmemories@gmail</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center">
-                      <div
-                        class="icon d-flex align-items-center justify-content-center"
-                      >
-                        <span class="fa fa-globe"></span>
-                      </div>
-                      <div class="text pl-3">
-                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                      </div>
-                    </div>
+                    <table class="info">
+                      <tr>
+                        <td width="30"><span class="fa fa-phone"></span></td>
+                        <td>Telpon</td>
+                        <td width="15" align="center">:</td>
+                        <td>+6282 1430 96625</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fa fa-instagram"></span></td>
+                        <td>Instagram</td>
+                        <td width="15" align="center">:</td>
+                        <td>@Bouquet_memories</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fa fa-map-marker"></span></td>
+                        <td>Alamat</td>
+                        <td width="15" align="center">:</td>
+                        <td>Tembalang</td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -308,40 +293,52 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Bouquet Memories</h5>
+            <h5 class="judul">Bouquet Memories</h5>
             <p>Jadikan Kenangan dalam Setiap Rangkaian</p>
           </div>
           <!--Grid column-->
-    
+
           <!--Grid column-->
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Menu</h5>
+            <h5 class="judul">Menu</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">Beranda</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Beranda</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">Produk</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Produk</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">Kontak Kami</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Kontak Kami</a
+                >
               </li>
             </ul>
             <!--Grid column-->
           </div>
           <!--Grid column-->
-    
+
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Lainnya</h5>
+            <h5 class="textlain">Lainnya</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">Testimoni</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Testimoni</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">Tentang Kami</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Tentang Kami</a
+                >
               </li>
               <li>
-                <a href="#!" class="text-body" style="text-decoration: none;">FaQ</a>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >FaQ</a
+                >
               </li>
             </ul>
           </div>
@@ -349,7 +346,7 @@
         <!--Grid row-->
       </div>
       <!-- Grid container -->
-    
+
       <!-- Copyright -->
       <div class="endfooter text-center p-3">
         © Made with love by Kelompok 4 SI Gamelab
