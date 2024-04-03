@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -74,44 +73,112 @@
     </div>
   </section>
 
-  <div id="produk" class="section">
-    <div class="container">
-      <h2 class="section-heading">Produk Kami</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Bouquet Mawar Merah</h5>
-              <p class="card-text">Deskripsi produk disini.</p>
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+    <div id="produk" class="section">
+      <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="true">NEW</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="top-tab" data-bs-toggle="tab" data-bs-target="#top" type="button" role="tab" aria-controls="top" aria-selected="false">TOP</button>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+            <!-- Konten tab New -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Bunga Uang</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>                
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Cokelat</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Buket Snack</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Bouquet Anggrek Putih</h5>
-              <p class="card-text">Deskripsi produk disini.</p>
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top product-img" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Bouquet Lily Pink</h5>
-              <p class="card-text">Deskripsi produk disini.</p>
-              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          <div class="tab-pane fade" id="top" role="tabpanel" aria-labelledby="top-tab">
+            <!-- Konten tab Top -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Nama Bunga</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box">
+                  <img src="Assets/img/icon.png" alt="Nama Bunga">
+                  <div class="bunga">Nama Bunga</div>
+                  <div class="harga">Harga: Rp xxx</div>
+                  <div class="garis"></div>
+                  <button class="btn btn-beli">Beli</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+    
+    <div id="best-seller" class="best">
+      <div class="container">
+        <h1 class="section-heading text-center mb-4">Best Seller</h1>
+        <h4 class="text-center mb-4">Produk Pilihan Pelanggan Kami</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="boxbest d-flex">
+              <div class="image-container">
+                <img src="Assets/img/icon.png" alt="Nama Bunga" class="img-fluid">
+              </div>
+              <div class="info-container d-flex flex-column justify-content-center">
+                <div class="bunga text-center">Nama Bunga</div>
+                <div class="harga text-center">Harga: Rp xxx</div>
+                <div class="garisbest mx-auto"></div>
+                <button class="btn btn-belibest mx-auto mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="boxbest d-flex">
+              <div class="image-container">
+                <img src="Assets/img/icon.png" alt="Nama Bunga" class="img-fluid">
+              </div>
+              <div class="info-container d-flex flex-column justify-content-center">
+                <div class="bunga text-center">Nama Bunga</div>
+                <div class="harga text-center">Harga: Rp xxx</div>
+                <div class="garisbest mx-auto"></div>
+                <button class="btn btn-belibest mx-auto mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
   <div id="tentang" class="section">
     <div class="container">
       <h2 class="section-heading">Tentang Kami</h2>
@@ -338,23 +405,232 @@
       <!-- Faqs content goes here -->
     </div>
   </div>
-
-  <div id="kontak" class="section">
-    <div class="container">
-      <h2 class="section-heading">Hubungi Kami</h2>
-      <!-- Kontak form or information goes here -->
+    <!------------- Kontak Section --------------->
+    <div id="kontak" class="section">
+      <div class="container">
+        <div class="align-content-xl-center">
+          <h2 class="section-heading">Hubungi Kami</h2>
+          <p class="ket">Ada pertanyaan? Silahkan tinggalkan pesan anda.</p>
+        </div>
+        <div class="form-contact row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div
+                  class="col-lg-7 col-md-7 order-md-last d-flex align-items-stretch"
+                >
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm"
+                    >
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="label" for="namadepan"
+                            >Nama Depan</label
+                          >
+                        </div>
+                        <div class="col-md-6">
+                          <label class="label" for="namabelakang"
+                            >Nama Belakang</label
+                          >
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="namadepan"
+                              id="namadepan"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="namabelakang"
+                              id="namabelakang"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="label" for="email">Email</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="label" for="notelpon"
+                            >Nomor Telpon</label
+                          >
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="notelpon"
+                              id="notelpon"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label class="label" for="message">Pesan</label>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="4"
+                              style="
+                                background-color: transparent;
+                                border-radius: 0;
+                                border: 0;
+                                border-bottom: 1px solid #000;
+                              "
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Kirim Pesan"
+                              class="btn-send"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="boxinfo col-lg-5 col-md-5 d-flex align-items-stretch"
+                >
+                  <div class="info-wrap w-100 p-md-5 p-4">
+                    <h4>Informasi Kontak Kami</h4>
+                    <p class="mb-4">
+                      Mari saling terhubung untuk mendapatkan informasi terbaru
+                      lainnya
+                    </p>
+                    <table class="info">
+                      <tr>
+                        <td width="30"><span class="fa fa-phone"></span></td>
+                        <td>Telpon</td>
+                        <td width="15" align="center">:</td>
+                        <td>+6282 1430 96625</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fa fa-instagram"></span></td>
+                        <td>Instagram</td>
+                        <td width="15" align="center">:</td>
+                        <td>@Bouquet_memories</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fa fa-map-marker"></span></td>
+                        <td>Alamat</td>
+                        <td width="15" align="center">:</td>
+                        <td>Tembalang</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <!-- ------------------------------------------------End Kontak Section------------------------------------ -->
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Bouquet Memories. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer class="text-center text-lg-start full-width-footer">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            <h5 class="judul">Bouquet Memories</h5>
+            <p>Jadikan Kenangan dalam Setiap Rangkaian</p>
+          </div>
+          <!--Grid column-->
 
-  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="judul">Menu</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+            <!--Grid column-->
+          </div>
+          <!--Grid column-->
 
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="textlain">Lainnya</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-body" style="text-decoration: none"
+                  >FaQ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="endfooter text-center p-3">
+        © Made with love by Kelompok 4 SI Gamelab
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/73be1eb700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 </html>
