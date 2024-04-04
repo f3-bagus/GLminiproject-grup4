@@ -66,49 +66,7 @@ colors
   color: #fff;
 }
 
-/* Section */
-.section {
-  background-color: #ffff; /* Warna ungu pastel */
-  padding: 50px 0;
-}
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* ------------ Produk --------------- */
-.bunga {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.harga {
-  margin-top: 5px;
-}
-
-.garis {
-  margin-top: 10px;
-  border-top: 3px solid #000000;
-}
-
-.btn-beli {
-  margin-top: 10px;
-  padding: 5px 10px 5px; /* Atur padding untuk memperlebar tombol */
-  background-color: #633842;
-  color: #E7CBCA;
-  transition: background-color 0.3s, color 0.3s; /* Transisi saat mengubah warna */
-  display: inline-block; /* Mengubah tombol menjadi elemen inline-block */
-  text-align: center; /* Pusatkan teks dalam tombol */
-  width: calc(100% - 60px); /* Lebar hampir sama dengan garis di atasnya */
-}
-
-.btn-beli:hover {
-  background-color: #99617A; /* Warna latar belakang saat dihover */
-  color: #000000; /* Warna teks saat dihover */
-}
-
-/*------------------heroes------------------*/
+/*---------------------------heroes------------------------------*/
 .hero {
   padding: 50px 12%;
   height: 700px;
@@ -160,70 +118,18 @@ colors
   height: 15px;
 }
 
-/* Custom Best Seller */
-.best {
-  padding: 5%;
-  background-color: #E7CBCA;
+/* Section */
+.section {
+  background-color: #ffff; 
+  padding: 50px 0;
 }
 
-.boxbest {
-  background-color: #C88EA7;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  position: relative; /* Menambahkan properti position */
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.boxbest .image-container {
-  width: 50%;
-  padding-right: 20px;
-  border-radius: 10px 0 0 10px;
-}
-
-.boxbest .info-container {
-  width: 50%;
-}
-
-.boxbest img {
-  max-width: 100%;
-  height: auto;
-}
-
-.bunga {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.harga {
-  margin-top: 5px;
-}
-
-.garisbest {
-  position: absolute; /* Menambahkan properti position */
-  bottom: 68px; /* Menyesuaikan posisi garis */
-  left: 50%; /* Menyesuaikan posisi garis */
-  transform: translateX(1%); /* Menyesuaikan posisi garis */
-  width: 46%; /* Menyesuaikan lebar garis */
-  border-top: 3px solid #000000;
-  margin-bottom: 10px;
-}
-
-.btn-belibest {
-  padding: 1px 10px 1px; /* Atur padding untuk memperlebar tombol */
-  height: auto;
-  background-color: #E7CBCA;
-  color: #633842;
-  transition: background-color 0.3s, color 0.3s; /* Transisi saat mengubah warna */
-  display: inline-block; /* Mengubah tombol menjadi elemen inline-block */
-  text-align: center; /* Pusatkan teks dalam tombol */
-  width: calc(100% - 60px); /* Lebar hampir sama dengan garis di atasnya */
-}
-
-.btn-belibest:hover {
-  background-color: #99617A; /* Warna latar belakang saat dihover */
-  color: #000000; /* Warna teks saat dihover */
-}
+/* ---------------------------- Produk ------------------------------------ */
 /* navbar section produk */
 .nav-tabs {
   border-bottom: none; /* Hilangkan garis bawah default */
@@ -250,7 +156,7 @@ colors
   margin-bottom: 0; /* Hilangkan jarak di bawah tab non-aktif */
 }
 
-/* Custom CSS for box */
+/* Custom CSS for box produk */
 .box {
   background-color: #E7CBCA;
   padding: 20px;
@@ -259,13 +165,158 @@ colors
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  border-radius: 10px; /* Menambahkan sudut bulat sebesar 10px */
+  border-radius: 10px; 
 }
 
 .box img {
   max-width: 100%;
   height: auto;
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .boxbest .image-container,
+  .boxbest .info-container {
+    width: 100%; /* Membuat gambar dan kontainer info menjadi 100% lebar */
+    padding-right: 0; /* Menghapus padding kanan pada gambar */
+    border-radius: 10px; /* Menghilangkan radius sudut pada border */
+  }
+
+  .boxbest .info-container {
+    margin-top: 20px; /* Menambahkan jarak antara gambar dan info */
+  }
+
+  .boxbest .image-container img {
+    border-radius: 10px 10px 0 0; /* Memberi radius sudut pada gambar */
+  }
+
+  .boxbest .info-container img {
+    border-radius: 0 0 10px 10px; /* Memberi radius sudut pada gambar */
+  }
+
+  .boxbest .garisbest {
+    width: 80%; /* Mengatur lebar garis */
+  }
+
+  .btn-belibest {
+    width: 100%; /* Menyesuaikan lebar tombol */
+  }
+
+  .nav-tabs .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.bunga {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.harga {
+  margin-top: 5px;
+}
+
+.garis {
+  margin-top: 10px;
+  border-top: 3px solid #000000;
+}
+
+.btn-beli {
+  margin-top: 10px;
+  padding: 5px 10px 5px; 
+  background-color: #633842;
+  color: #E7CBCA;
+  transition: background-color 0.3s, color 0.3s; 
+  display: inline-block; 
+  text-align: center; 
+  width: calc(100% - 60px); 
+}
+
+.btn-beli:hover {
+  background-color: #99617A; /* Warna latar belakang saat dihover */
+  color: #000000; /* Warna teks saat dihover */
+}
+
+/*----------------------- Custom Best Seller ------------------------ */
+/* Custom CSS */
+.best {
+  padding: 5%;
+  background-color: #E7CBCA;
+}
+
+.boxbest {
+  background-color: #C88EA7;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.boxbest .image-container {
+  width: 50%;
+  padding-right: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.boxbest .info-container {
+  width: 50%;
+}
+
+.boxbest img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Menjadikan gambar memenuhi sisi kiri tanpa naik ke atas */
+}
+
+.bunga {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.harga {
+  margin-top: 5px;
+}
+
+.btn-belibest {
+  padding: 5px 10px;
+  height: auto;
+  background-color: #E7CBCA;
+  color: #633842;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  text-align: center;
+  width: calc(100% - 20px);
+}
+
+.btn-belibest:hover {
+  background-color: #99617A;
+  color: #000000;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .boxbest {
+    padding: 15px; /* Mengurangi padding pada layar kecil */
+    height: auto; /* Mengatur tinggi box menjadi otomatis */
+  }
+
+  .boxbest .image-container {
+    width: 100%;
+    padding-right: 0;
+    border-radius: 10px; /* Menghilangkan border-radius pada layar kecil */
+  }
+
+  .boxbest .info-container {
+    width: 100%;
+  }
+
+  .btn-belibest {
+    width: 100%; /* Mengatur tombol menjadi lebar penuh pada layar kecil */
+  }
+}
+
 /* ----------------------------------------------------------- */
 
 /*-------------------TESTIMONI-------------------*/
