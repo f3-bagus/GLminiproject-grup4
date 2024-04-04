@@ -319,7 +319,7 @@ colors
 
 /* ----------------------------------------------------------- */
 
-/*-------------------TESTIMONI-------------------*/
+/*-------------------------------TESTIMONI------------------------------*/
 .section-heading-testi {
   text-align: center;
   margin-bottom: 10px;
@@ -391,7 +391,7 @@ colors
 }
 /* ------------------------------------------ */
 
-/*---------- Hubungi Kami --------------*/
+/*-------------------------- Hubungi Kami -------------------------------*/
 .align-content-xl-center {
   text-align: center;
   margin-bottom: 20px;
@@ -457,9 +457,9 @@ input[type="email"] {
     justify-content: center;
   }
 }
-/* ------------------------------------ */
+/* --------------------------------------------------------------- */
 
-/*---------- Footer --------------*/
+/*--------------------------------- Footer ------------------------------------*/
 .endfooter {
   position: relative;
   padding: 0;
@@ -487,4 +487,69 @@ input[type="email"] {
   background-color: #f8f9fa;
   padding: 30px 0;
   text-align: center;
+}
+
+/*--------------------------------- Tentang Kami ------------------------------------*/
+/* Custom CSS */
+.tentang-kami-container {
+  display: flex;
+  justify-content: space-between; /* Menyusun box dan foto secara horizontal */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-us-box {
+  background-color: #E7CBCA; /* Mengubah warna latar belakang */
+  border-radius: 94px; /* Menambahkan border radius */
+  padding: 35px;
+  width: 50%; /* Mengatur lebar box tentang kami */
+}
+
+.judul {
+  padding-top: 50px;
+  padding-left: 27px;
+  padding-bottom: 5px;
+  padding-right: 18px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.garis-judul {
+  border: 0;
+  border-top: 3px solid #000000;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 96%;
+  margin-bottom: 20px;
+}
+
+.isi {
+  padding-top: 5px;
+  padding-left: 21px;
+  padding-bottom: 5px;
+  padding-right: 18px;
+  font-size: 16px;
+}
+
+.garis-isi {
+  border: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 3px solid #000000;
+  width: 96%;
+  margin-top: 20px;
+}
+
+.foto-container {
+  width: 20%; /* Mengatur lebar foto */
+  display: flex;
+  flex-direction: column; /* Mengatur foto-foto menjadi tumpukan vertikal */
+}
+
+.foto-container img {
+  width: calc(100% - 20px); /* Mengurangi lebar untuk mengakomodasi border */
+  border-radius: 1px;
+  background-color: darkgrey;
+  border: 2px solid #633842; /* Menambahkan border */
+  margin-bottom: 20px;
 }
