@@ -1,5 +1,8 @@
-/* Custom CSS */
+/* ---------------------- General Custom ---------------------- */
 h4 {
+  font-weight: 700;
+}
+h2 {
   font-weight: 700;
 }
 body {
@@ -30,10 +33,25 @@ colors .whitegre {
   color: black;
 }
 
-/* Navbar */
+.section {
+  background-color: #ffff;
+  padding: 50px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* ---------------------- End General Custom ---------------------- */
+
+/* ---------------------- Navbar Style ---------------------- */
 .navbar {
   background-color: #e7cbca; /* Warna pink ungu pastel */
-  padding: 15px 0 15px 0;
+  padding: 12px 0 12px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-brand {
@@ -49,11 +67,20 @@ colors .whitegre {
 .navbar-nav {
   margin-left: auto;
 }
-
-/* Beranda */
-#home {
-  background-color: #ffc0cb; /* Warna pink pastel */
+/* Efek Hover pada Navbar */
+.navbar-nav .nav-link:hover {
+  font-weight: 500;
+  text-shadow: 0 0 5px rgba(229, 160, 194, 0.5);
 }
+/* Efek Active pada Navbar */
+.navbar-nav .nav-link.active {
+  font-weight: 500;
+  text-shadow: 0 0 5px rgba(229, 160, 194, 0.5);
+}
+
+/* ---------------------- End Navbar ---------------------- */
+
+/* ---------------------- Beranda ---------------------- */
 
 .jumbotron {
   background-image: url("https://via.placeholder.com/1500x500");
@@ -65,11 +92,12 @@ colors .whitegre {
   color: #fff;
 }
 
-/*---------------------------heroes------------------------------*/
+/* ---------------------- Heroes ---------------------- */
 .hero {
   padding: 50px 12%;
   height: 700px;
   background-color: rgb(255, 255, 255);
+  margin-top: 6%;
 }
 
 #carouselHero {
@@ -116,19 +144,9 @@ colors .whitegre {
   width: 15px;
   height: 15px;
 }
+/* ---------------------- End Heores ---------------------- */
 
-/* Section */
-.section {
-  background-color: #ffff;
-  padding: 50px 0;
-}
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* ---------------------------- Produk ------------------------------------ */
+/* ---------------------- Produk ---------------------- */
 /* navbar section produk */
 .nav-tabs {
   border-bottom: none; /* Hilangkan garis bawah default */
@@ -139,7 +157,6 @@ colors .whitegre {
   margin-left: 10%;
   margin-right: 10%;
   font-size: large;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
@@ -153,6 +170,7 @@ colors .whitegre {
   border: none;
   border-bottom: 2px solid transparent; /* Warna garis bawah non-aktif */
   margin-bottom: 0; /* Hilangkan jarak di bawah tab non-aktif */
+  color: #000000;
 }
 
 /* Custom CSS for box produk */
@@ -218,7 +236,7 @@ colors .whitegre {
 
 .garis {
   margin-top: 10px;
-  border-top: 3px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 .btn-beli {
@@ -236,9 +254,9 @@ colors .whitegre {
   background-color: #99617a; /* Warna latar belakang saat dihover */
   color: #000000; /* Warna teks saat dihover */
 }
+/* ---------------------- End Produk ---------------------- */
 
-/*----------------------- Custom Best Seller ------------------------ */
-/* Custom CSS */
+/* ---------------------- Best Seller ---------------------- */
 .best {
   padding: 5%;
   background-color: #e7cbca;
@@ -315,14 +333,74 @@ colors .whitegre {
     width: 100%; /* Mengatur tombol menjadi lebar penuh pada layar kecil */
   }
 }
+/* ---------------------- End Best Seller ---------------------- */
 
-/* ----------------------------------------------------------- */
-
-/*-------------------------------TESTIMONI------------------------------*/
-.section-heading-testi {
-  text-align: center;
-  margin-bottom: 10px;
+/*--------------------------------- Tentang Kami ------------------------------------*/
+.tentang-kami-container {
+  display: flex;
+  justify-content: space-between; /* Menyusun box dan foto secara horizontal */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+.about-us-box {
+  background-color: #e7cbca; /* Mengubah warna latar belakang */
+  border-radius: 94px; /* Menambahkan border radius */
+  padding: 35px;
+  width: 50%; /* Mengatur lebar box tentang kami */
+}
+
+.judul {
+  padding-top: 50px;
+  padding-left: 27px;
+  padding-bottom: 5px;
+  padding-right: 18px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.garis-judul {
+  border: 0;
+  border-top: 3px solid #000000;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 96%;
+  margin-bottom: 20px;
+}
+
+.isi {
+  padding-top: 5px;
+  padding-left: 21px;
+  padding-bottom: 5px;
+  padding-right: 18px;
+  font-size: 16px;
+}
+
+.garis-isi {
+  border: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 3px solid #000000;
+  width: 96%;
+  margin-top: 20px;
+}
+
+.foto-container {
+  width: 20%; /* Mengatur lebar foto */
+  display: flex;
+  flex-direction: column; /* Mengatur foto-foto menjadi tumpukan vertikal */
+}
+
+.foto-container img {
+  width: calc(100% - 20px); /* Mengurangi lebar untuk mengakomodasi border */
+  border-radius: 1px;
+  background-color: darkgrey;
+  border: 2px solid #633842; /* Menambahkan border */
+  margin-bottom: 20px;
+}
+/* ---------------------- End Tentang Kami ---------------------- */
+
+/* ---------------------- Testimoni ---------------------- */
 #testimoni {
   background-color: #e7cbca;
 }
@@ -387,9 +465,39 @@ colors .whitegre {
 .swiper-navbtn:hover {
   color: rgba(99, 56, 66, 1);
 }
-/* ------------------------------------------ */
+/* ---------------------- End Testimoni ---------------------- */
 
-/*-------------------------- Hubungi Kami -------------------------------*/
+/* ---------------------- Faq ---------------------- */
+p.ket {
+  text-align: center;
+  margin-top: -50px;
+}
+#faq {
+  margin: 10px 0 0px 0;
+}
+.accordion-body {
+  margin: 30px 0 20px 0;
+}
+.accordion-item {
+  margin-bottom: 10px;
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion-button.collapsed {
+  border-bottom: 1px solid #dee2e6;
+}
+.accordion-button:not(.collapsed):hover {
+  background-color: #633842;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #633842;
+  color: #fff;
+}
+/* ---------------------- End Faq ---------------------- */
+
+/* ---------------------- Hubungi Kami ---------------------- */
 .align-content-xl-center {
   text-align: center;
   margin-bottom: 20px;
@@ -456,9 +564,9 @@ input[type="email"] {
     justify-content: center;
   }
 }
-/* --------------------------------------------------------------- */
+/* ---------------------- End Hubungi Kami ---------------------- */
 
-/*--------------------------------- Footer ------------------------------------*/
+/* ---------------------- Footer ---------------------- */
 .endfooter {
   position: relative;
   padding: 0;
@@ -466,7 +574,6 @@ input[type="email"] {
   width: 100%;
   background-color: #633842;
   color: #e9e9e9;
-  
 }
 .full-width-footer {
   width: 100%;
@@ -477,7 +584,7 @@ input[type="email"] {
   bottom: 0;
   left: 0;
 }
-.judul {
+.judul-footer {
   color: #202020;
   font-weight: 700;
 }
@@ -491,67 +598,4 @@ input[type="email"] {
   text-align: center;
 }
 
-/*--------------------------------- Tentang Kami ------------------------------------*/
-/* Custom CSS */
-.tentang-kami-container {
-  display: flex;
-  justify-content: space-between; /* Menyusun box dan foto secara horizontal */
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.about-us-box {
-  background-color: #E7CBCA; /* Mengubah warna latar belakang */
-  border-radius: 94px; /* Menambahkan border radius */
-  padding: 35px;
-  width: 50%; /* Mengatur lebar box tentang kami */
-}
-
-.judul {
-  padding-top: 50px;
-  padding-left: 27px;
-  padding-bottom: 5px;
-  padding-right: 18px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.garis-judul {
-  border: 0;
-  border-top: 3px solid #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 96%;
-  margin-bottom: 20px;
-}
-
-.isi {
-  padding-top: 5px;
-  padding-left: 21px;
-  padding-bottom: 5px;
-  padding-right: 18px;
-  font-size: 16px;
-}
-
-.garis-isi {
-  border: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-top: 3px solid #000000;
-  width: 96%;
-  margin-top: 20px;
-}
-
-.foto-container {
-  width: 20%; /* Mengatur lebar foto */
-  display: flex;
-  flex-direction: column; /* Mengatur foto-foto menjadi tumpukan vertikal */
-}
-
-.foto-container img {
-  width: calc(100% - 20px); /* Mengurangi lebar untuk mengakomodasi border */
-  border-radius: 1px;
-  background-color: darkgrey;
-  border: 2px solid #633842; /* Menambahkan border */
-  margin-bottom: 20px;
-}
+/* ---------------------- End Footer ---------------------- */
