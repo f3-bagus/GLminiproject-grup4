@@ -4,38 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bouquet Memories</title>
+    <!-- Icon -->
     <link
       rel="shortcut icon"
       href="/Assets/img/favicon.ico"
       type="image/x-icon"
     />
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- Bootstrap -->
     <link
       href="/Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- ---------------------------------------------------------------------------------------- -->
+    <!-- Css Style -->
     <link rel="stylesheet" href="/Assets/css/style.css" />
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Swiper JS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css    " />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- ------------------------------------------------------------------------------------------ -->
   </head>
 
   <body>
+    <!-- ---------------------------------- Navbar --------------------------------------- -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="/Assets/img/icon.png">
-          <img src="/Assets/img/icon.png" alt="Bouquet Memories Logo" class="navbar-logo">
+          <img
+            src="/Assets/img/icon.png"
+            alt="Bouquet Memories Logo"
+            class="navbar-logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -63,14 +80,16 @@
               <a class="nav-link" href="#testimoni">Testimoni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak Kami</a>
+              <a class="nav-link" href="#faq">Kontak Kami</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--- HERO --->
-    <section id="hero" class="hero">
+    <!-- ---------------------------------- End Navbar --------------------------------------- -->
+
+    <!-- ---------------------------------- Hero Section --------------------------------------- -->
+    <section id="home" class="hero">
       <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -106,7 +125,9 @@
         </div>
       </div>
     </section>
+    <!-- ---------------------------------- End Hero Section --------------------------------------- -->
 
+    <!-- ---------------------------------- Produk Section --------------------------------------- -->
     <div id="produk" class="section">
       <div class="container">
         <!-- Nav tabs -->
@@ -156,7 +177,10 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="box">
-                  <img src="Assets/img/buket uang mix bunga.png" alt="Nama Bunga" />
+                  <img
+                    src="Assets/img/buket uang mix bunga.png"
+                    alt="Nama Bunga"
+                  />
                   <div class="bunga">UangMixBunga</div>
                   <div class="harga">Harga: Rp 30.000</div>
                   <div class="garis"></div>
@@ -193,7 +217,10 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="box">
-                  <img src="Assets/img/buket bunga artif.png" alt="Nama Bunga" />
+                  <img
+                    src="Assets/img/buket bunga artif.png"
+                    alt="Nama Bunga"
+                  />
                   <div class="bunga">Buket Bunga Artif</div>
                   <div class="harga">Harga: Rp 30.000</div>
                   <div class="garis"></div>
@@ -202,7 +229,10 @@
               </div>
               <div class="col-md-6">
                 <div class="box">
-                  <img src="Assets/img/buket snack mix bunga.png" alt="Nama Bunga" />
+                  <img
+                    src="Assets/img/buket snack mix bunga.png"
+                    alt="Nama Bunga"
+                  />
                   <div class="bunga">Buket Snack Mix Bunga</div>
                   <div class="harga">Harga: Rp 24.500</div>
                   <div class="garis"></div>
@@ -214,11 +244,13 @@
         </div>
       </div>
     </div>
+    <!-- ---------------------------------- End Product Section --------------------------------------- -->
 
+    <!-- ---------------------------------- Best Seller Section --------------------------------------- -->
     <div id="best-seller" class="best">
       <div class="container">
-        <h1 class="section-heading text-center mb-4">Best Seller</h1>
-        <h4 class="text-center mb-4">Produk Pilihan Pelanggan Kami</h4>
+        <h2 class="section-heading">Best Seller</h2>
+        <p class="ket">Produk Pilihan Pelanggan Kami.</p>
         <div class="row">
           <div class="col-md-6">
             <div class="boxbest d-flex">
@@ -259,17 +291,42 @@
         </div>
       </div>
     </div>
+
+    <!-- ---------------------------------- End Best Seller Section--------------------------------------- -->
+
+    <!-- ---------------------------------- Tentang Kami Section --------------------------------------- -->
     <div id="tentang" class="section">
       <div class="container">
-        <h2 class="section-heading">Tentang Kami</h2>
-        <!-- Tentang Kami content goes here -->
+        <div class="tentang-kami-container">
+          <div class="about-us-box">
+            <h2 class="judul">Tentang Kami</h2>
+            <hr class="garis-judul" />
+            <p class="isi">
+              Bouquet Memories adalah tempat di mana setiap momen berharga Anda
+              diabadikan dalam keindahan buket bunga yang dirancang secara
+              khusus. Kami berkomitmen untuk menyampaikan keindahan dan kenangan
+              yang tak terlupakan melalui kreasi bunga yang unik dan berkualitas
+              tinggi. Dengan sentuhan artistik dan cinta akan detail, kami
+              menciptakan buket yang mewakili cerita Anda. Selamat datang di
+              Bouquet Memories, di mana setiap bunga memiliki cerita yang indah
+              untuk diceritakan.
+            </p>
+            <hr class="garis-isi" />
+          </div>
+          <div class="foto-container">
+            <img src="/Assets/img/6.png" alt="Foto Atas" />
+            <img src="/Assets/img/1.png" alt="Foto Bawah" />
+          </div>
+        </div>
       </div>
     </div>
+    <!-- ---------------------------------- End Tentang Kami --------------------------------------- -->
 
+    <!-- ---------------------------------- Testimoni Section --------------------------------------- -->
     <div id="testimoni" class="section">
       <div class="container">
-        <h2 class="section-heading-testi">Testimoni Pelanggan</h2>
-        <p class="section-heading">
+        <h2 class="section-heading">Testimoni Pelanggan</h2>
+        <p class="ket">
           Temukan bagaimana produk kami membantu pelanggan mencapai tujuan
           mereka.
         </p>
@@ -518,14 +575,182 @@
         </div>
       </div>
     </div>
+    <!-- ---------------------------------- End Testimoni Section --------------------------------------- -->
 
+    <!-- ---------------------------------- Faq Section --------------------------------------- -->
     <div id="faq" class="section">
       <div class="container">
         <h2 class="section-heading">FaQ</h2>
-        <!-- Faqs content goes here -->
+        <p class="ket">
+          Ada pertanyaan? Di sini Anda akan menemukan jawaban yang paling banyak
+          ditanyakan mitra kami.
+        </p>
+        <div class="container accordion-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="accordion accordion-flush" id="accordionFlushLeft">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      Apakah saya bisa membeli sesuai keinginan saya?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushLeft"
+                  >
+                    <div class="accordion-body">
+                      Tentu! Segera hubungi kami untuk pemesanan buket secara
+                      custom.
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Bagaimana cara jika saya ingin memesan?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushLeft"
+                  >
+                    <div class="accordion-body">
+                      Anda dapat menghubungi langsung kontak tertera
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Apakah produknya hanya seperti yang ditampilkan saja?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushLeft"
+                  >
+                    <div class="accordion-body">
+                      Tidak. Masih banyak bentuk buket yang bisa kami berikan
+                      untuk anda. Segera hubungi kami untuk pemesanan lebih
+                      lanjut.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion accordion-flush" id="accordionFlushRight">
+                <!-- Accordion Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      Dimana lokasi Bouquet Memories ini?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushRight"
+                  >
+                    <div class="accordion-body">
+                      Kami ada di Tembalang, Semarang.
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Bisakah saya memesan untuk hari yang sama?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushRight"
+                  >
+                    <div class="accordion-body">
+                      Kami berusaha menyediakan secepat mungkin. Namun
+                      konsultasikan segera untuk pemesanan lebih rinci.
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion Item 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      Apakah saya bisa mengambil pesanan secara langsung?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushRight"
+                  >
+                    <div class="accordion-body">
+                      Tentu! Kami melayani COD daerah Undip/Polines Tembalang,
+                      Semarang.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!------------- Kontak Section --------------->
+    <!-- ---------------------------------- End Faq Section --------------------------------------- -->
+
+    <!-- ---------------------------------- Kontak Section --------------------------------------- -->
     <div id="kontak" class="section">
       <div class="container">
         <div class="align-content-xl-center">
@@ -678,6 +903,7 @@
     </div>
     <!-- ------------------------------------------------End Kontak Section------------------------------------ -->
 
+    <!-- ------------------------------------------------Footer Section------------------------------------ -->
     <footer class="text-center text-lg-start full-width-footer">
       <!-- Grid container -->
       <div class="container p-4">
@@ -685,14 +911,14 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-            <h5 class="judul">Bouquet Memories</h5>
+            <h5 class="judul-footer">Bouquet Memories</h5>
             <p>Jadikan Kenangan dalam Setiap Rangkaian</p>
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="judul">Menu</h5>
+            <h5 class="judul-footer">Menu</h5>
             <ul class="list-unstyled">
               <li>
                 <a href="#!" class="text-body" style="text-decoration: none"
@@ -745,6 +971,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+    <!-- ------------------------------------------------End Footer Section------------------------------------ -->
 
     <script
       src="https://kit.fontawesome.com/73be1eb700.js"
