@@ -6,8 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-colors
-.whitegre {
+colors .whitegre {
   color: rgba(233, 233, 233, 1);
 }
 
@@ -33,7 +32,7 @@ colors
 
 /* Navbar */
 .navbar {
-  background-color: #E7CBCA; /* Warna pink ungu pastel */
+  background-color: #e7cbca; /* Warna pink ungu pastel */
   padding: 15px 0 15px 0;
 }
 
@@ -48,7 +47,7 @@ colors
 }
 
 .navbar-nav {
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 /* Beranda */
@@ -94,7 +93,7 @@ colors
   margin: 5%;
 }
 
-.carousel-item>div {
+.carousel-item > div {
   max-width: 50%;
   padding: 0 20px;
   color: black;
@@ -105,7 +104,7 @@ colors
   font-weight: bold;
 }
 
-.carousel-item>img {
+.carousel-item > img {
   max-width: 50%;
   height: 500px;
   align-self: center;
@@ -120,7 +119,7 @@ colors
 
 /* Section */
 .section {
-  background-color: #ffff; 
+  background-color: #ffff;
   padding: 50px 0;
 }
 
@@ -158,14 +157,14 @@ colors
 
 /* Custom CSS for box produk */
 .box {
-  background-color: #E7CBCA;
+  background-color: #e7cbca;
   padding: 20px;
   margin-top: 20%;
   margin-bottom: 10%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .box img {
@@ -224,17 +223,17 @@ colors
 
 .btn-beli {
   margin-top: 10px;
-  padding: 5px 10px 5px; 
+  padding: 5px 10px 5px;
   background-color: #633842;
-  color: #E7CBCA;
-  transition: background-color 0.3s, color 0.3s; 
-  display: inline-block; 
-  text-align: center; 
-  width: calc(100% - 60px); 
+  color: #e7cbca;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  text-align: center;
+  width: calc(100% - 60px);
 }
 
 .btn-beli:hover {
-  background-color: #99617A; /* Warna latar belakang saat dihover */
+  background-color: #99617a; /* Warna latar belakang saat dihover */
   color: #000000; /* Warna teks saat dihover */
 }
 
@@ -242,11 +241,11 @@ colors
 /* Custom CSS */
 .best {
   padding: 5%;
-  background-color: #E7CBCA;
+  background-color: #e7cbca;
 }
 
 .boxbest {
-  background-color: #C88EA7;
+  background-color: #c88ea7;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -282,7 +281,7 @@ colors
 .btn-belibest {
   padding: 5px 10px;
   height: auto;
-  background-color: #E7CBCA;
+  background-color: #e7cbca;
   color: #633842;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
@@ -291,7 +290,7 @@ colors
 }
 
 .btn-belibest:hover {
-  background-color: #99617A;
+  background-color: #99617a;
   color: #000000;
 }
 
@@ -324,23 +323,22 @@ colors
   text-align: center;
   margin-bottom: 10px;
 }
-#testimoni{
-  background-color: #E7CBCA;
+#testimoni {
+  background-color: #e7cbca;
 }
-.slide-container{
+.slide-container {
   max-width: 1400px;
   width: 100%;
   padding: 40px 0;
 }
-.slide-content{
+.slide-content {
   margin: 0 40px;
 }
-.card-wrapper{
+.card-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 20px;
-  gap: 20px; 
-
+  gap: 20px;
 }
 .card-testi {
   width: 420px;
@@ -356,7 +354,7 @@ colors
   height: 100px;
   border-radius: 50%;
 }
-.testi-txt{
+.testi-txt {
   background-color: rgba(233, 233, 233, 1);
   width: 100%;
   height: 50%;
@@ -365,28 +363,28 @@ colors
   align-items: center;
   margin-top: 10px;
 }
-.testi-bio{
+.testi-bio {
   display: flex;
-  color: #E9E9E9;
+  color: #e9e9e9;
 }
 .checked {
-  color: #FFE500;
+  color: #ffe500;
 }
-.name-star{
+.name-star {
   align-content: center;
   margin: 10px;
 }
-.swiper-pagination-bullet{
-  background-color: #E7CBCA;
+.swiper-pagination-bullet {
+  background-color: #e7cbca;
   margin-top: 200px;
   margin-bottom: -50;
 }
-.swiper-navbtn{
-  color:#E7CBCA;
+.swiper-navbtn {
+  color: #e7cbca;
   transition: color 0.3s ease;
 }
 
-.swiper-navbtn:hover{
+.swiper-navbtn:hover {
   color: rgba(99, 56, 66, 1);
 }
 /* ------------------------------------------ */
@@ -424,14 +422,15 @@ colors
 }
 input[type="text"],
 input[type="email"] {
-  background-color: #ebdfe4;
+  background-color: transparent;
   padding: 10px;
+  border: 0;
   border-bottom: 1px solid #202020;
   margin-bottom: 10px;
   border-radius: 0;
 }
 .form-contact {
-  background-color: #ebdfe4;
+  background-color: #e7cbca;
   border-radius: 15px;
 }
 .boxinfo {
@@ -465,11 +464,13 @@ input[type="email"] {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #a37187;
+  background-color: #633842;
+  color: #e9e9e9;
+  
 }
 .full-width-footer {
   width: 100%;
-  background-color: #c88ea7;
+  background-color: #e7cbca;
   color: #202020;
   padding: 20px 0 0 0;
   position: relative;
@@ -484,7 +485,9 @@ input[type="email"] {
   visibility: hidden;
 }
 .footer {
-  background-color: #f8f9fa;
+  background-color: #633842;
+  color: #e9e9e9;
   padding: 30px 0;
   text-align: center;
 }
+/* ------------------------------------ */
